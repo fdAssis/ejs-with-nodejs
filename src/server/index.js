@@ -6,10 +6,12 @@ app.use(express.json());
 
 app.set('view engine', 'ejs');
 
-app.get('/:user', (request, response) => {
-  const { user } = request.params;
+app.get('/', (request, response) => {
+  response.render('../src/pages/index');
+});
 
-  return response.send(`<H1> Hello ${user} <H1/>`);
+app.get('/about', (request, response) => {
+  response.render('../src/pages/about');
 });
 
 app.listen(4000, () => {
