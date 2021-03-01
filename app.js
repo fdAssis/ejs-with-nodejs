@@ -11,7 +11,7 @@ app.use('/css', express.static(__dirname + 'src/public/css'));
 app.set('view engine', 'ejs');
 
 app.get('/', (request, response) => {
-  response.render();
+  response.render('src/views/index');
 });
 
 app.listen(port, () => {
