@@ -16,5 +16,5 @@ app.get('/', (request, response) => {
 });
 
 app.listen(port, () => {
-  console.log('App is running 🌟');
+  console.log(`App is running 🌟  port: ${port}`);
 });

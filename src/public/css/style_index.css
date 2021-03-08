@@ -38,17 +38,59 @@
 }
 
 #menu a {
-  color: #61c578;
+  color: #121212;
   margin-right: 10px;
   text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 #menu a:hover {
   transition: 500ms;
-  color: #ffcc56;
+  color: #61c578;
 }
 
-#about {
+#menu ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#menu ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+#btn-ask button {
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  background: #fff;
+  border: solid 2px #2de09f;
+  cursor: pointer;
+}
+
+#btn-ask button:hover {
+  transition: 500ms;
+  border: solid 2px #f9a826;
+}
+
+#btn-login button {
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  color: #fff;
+  background: #2de09f;
+  cursor: pointer;
+}
+
+#btn-login button:hover {
+  transition: 500ms;
+  background: #f9a826;
+}
+
+#headline {
   height: 40vh;
   display: flex;
   flex-direction: row;
